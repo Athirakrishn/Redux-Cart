@@ -1,9 +1,9 @@
 
 import { useEffect, useState } from "react"
-import Header from '../Components/Header'
 import { Link, useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { decrementQuantity, emptyCart, incrementQuantity, removeCartItem } from "../redux/slices/cartSlice"
+import Header from "../components/Header"
 
 
 const Cart = () => {

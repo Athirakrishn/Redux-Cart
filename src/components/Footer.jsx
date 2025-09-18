@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <>
-            
                 <div style={{ height: '250px', marginTop: '100px' }} className="w-full bg-rose-800 text-white px-6 py-8">
                     <div className="grid grid-cols-1 md:grid-cols-6 gap-20">
                         {/* Left Section */}
@@ -17,7 +16,6 @@ const Footer = () => {
                                 Code licensed Luminar, docs CC BY 3.0 Currently v5.3.2
                             </p>
                         </div>
-
                         {/* Links */}
                         <div className='md:col-span-1 w-fit'>
                             <h1 className="text-xl font-bold ms-">Links</h1>
@@ -28,7 +26,7 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        {/* Guides */}
+                        {/* Guides */}  
                         <div className='md:col-span-1 w-fit'>
                             <h1 className="text-xl font-bold">Guides</h1>
                             <ul className="mt-3 space-y-2 text-base">
