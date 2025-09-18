@@ -69,15 +69,14 @@ const Cart = () => {
                             </div>
                           </td>
                           <td>$ {product?.totalPrice}</td>
-                          <td><button onClick={() => dispatch(emptyCart)}><i className="fa-solid fa-trash text-red-600 cursor-pointer"></i></button></td>
-                        </tr>
+<td><button onClick={()=>dispatch(removeCartItem(product?.id))}><i className="fa-solid fa-trash text-red-600 cursor-pointer"></i></button></td>                        </tr>
                       ))
                     }
                   </tbody>
                 </table>
                 <div className="float-right mt-4">
-                  <button className="bg-red-600 text-white text-lg p-1 inline-block rounded mx-2">EMPTY CART</button>
-                  <Link to={'/'} className="bg-blue-600 text-white text-lg p-1 inline-block rounded mx-2">SHOP MORE</Link>
+<button onClick={()=>dispatch(emptyCart())} className="bg-red-600 text-white text-lg p-1 inline-block rounded mx-2">EMPTY CART</button>            
+      <Link to={'/'} className="bg-blue-600 text-white text-lg p-1 inline-block rounded mx-2">SHOP MORE</Link>
                 </div>
               </div>
               {/* total  */}
