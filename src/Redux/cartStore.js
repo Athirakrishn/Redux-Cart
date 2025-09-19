@@ -3,8 +3,16 @@ import productSlice from './slices/productSlice'
 import wishlistSlice from './slices/wishlistSlice'
 import cartSlice from './slices/cartSlice'
 
+// const cartStore = configureStore({
+//     reducer: {
+//         productReducer: productSlice,
+//         wishlistReducer : wishlistSlice,
+//         cartReducer : cartSlice
+//     }
+// })
+
 const cartStore = configureStore({
-    reducer: {
+reducer: {
         productReducer: productSlice,
         wishlistReducer : wishlistSlice,
         cartReducer : cartSlice

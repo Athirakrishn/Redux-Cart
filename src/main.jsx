@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 import cartStore from './redux/CartStore.js'
+// import cartStore from './redux/CartStore.js'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
